@@ -13,7 +13,7 @@ import java.util.List;
 public interface TransactionDAO extends CrudRepository<Transaction, Long> {
 
     @Query("SELECT t FROM Transaction t " +
-            "WHERE t.balance <> 0.0 AND t.accountId = :accountId " +
+            "WHERE t.balance < 0.0 AND t.accountId = :accountId " +
             "ORDER BY t.operationType.chargeOrder, eventDate")
     List<Transaction> getPendingTransactions(@Param("accountId") Long accountId);
 }
