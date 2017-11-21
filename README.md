@@ -17,11 +17,11 @@ A máquina (Linux ou Mac) deveriá possuir
 
 # Instalação
 Executar o script bootstrap.sh presente na raiz do projeto. Este script executará:
-* Os scripts de migration presentes na pasta /migration do projeto. Os scripts criam os esquemas e tabelas na base, além de inserir alguns dados dummy.
+* Os scripts de migration presentes na pasta /migration do projeto. Os scripts criam os esquemas e tabelas na base, além de inserir alguns dados dummy. Os script são executados utilizando o plugin flyway do maven.
 * Construirá as imagens docker ruhan/accounts-api e ruhan/transactions-api
-'''
+```
 mvn clean install dockerfile:build
-'''
+```
 * Subirá os containers das imagens criadas no passo anterior
 
 # Acesso
