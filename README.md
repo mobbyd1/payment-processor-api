@@ -1,6 +1,5 @@
 # payment-processor-api
 
-# API Resfful para uma aplicação de processamento de débito/crédito
 
 # Arquitetura 
 O projeto foi desenvolvido com as seguintes tecnologias
